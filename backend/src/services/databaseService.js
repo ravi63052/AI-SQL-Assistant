@@ -26,7 +26,6 @@ async function testConnection() {
 
 async function executeQuery(sql, params = []) {
     const [results] = await pool.execute(sql, params);
-
     return results;
 }
 
